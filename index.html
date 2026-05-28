@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David You</title>
+  <meta name="description" content="David You — personal site. Coming soon." />
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --ink: #1a1a1a;
+      --muted: #6b6b6b;
+      --rule: #e4e1d9;
+      --accent: #8a4b2a;
+      --serif: "Source Serif Pro", "Source Serif 4", "Charter", "Georgia", serif;
+      --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      font-feature-settings: "kern", "liga";
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-decoration-color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    a:hover { color: var(--accent); }
+
+    main {
+      flex: 1;
+      max-width: 32rem;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 2rem;
+    }
+
+    .name {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1.125rem;
+      letter-spacing: 0.01em;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 1.875rem;
+      line-height: 1.25;
+      font-weight: 600;
+      margin: 0 0 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    p { margin: 0 0 1rem; color: var(--muted); }
+    p.lede { color: var(--ink); }
+
+    footer {
+      max-width: 32rem;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-family: var(--sans);
+      font-size: 0.8125rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="name">David You</div>
+    <h1>Coming soon.</h1>
+    <p class="lede">A personal site is on the way.</p>
+    <p>In the meantime, reach me at <a href="mailto:dyou3968@gmail.com">dyou3968@gmail.com</a>.</p>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 David You</span>
+    <span>davidyou.com</span>
+  </footer>
+</body>
+</html>
