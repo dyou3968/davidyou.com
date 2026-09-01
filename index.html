@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>David You</title>
-  <meta name="description" content="David You — personal site. Coming soon." />
+  <meta name="description" content="David You — product manager. Projects and writing." />
   <style>
     :root {
       --bg: #fbfaf7;
@@ -69,6 +69,65 @@
     p { margin: 0 0 1rem; color: var(--muted); }
     p.lede { color: var(--ink); }
 
+    h2 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 3.5rem 0 0.5rem;
+    }
+
+    .project {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .project:first-of-type { border-top: 1px solid var(--rule); }
+
+    .project-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .project h3 {
+      font-family: var(--serif);
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+    .status {
+      font-family: var(--sans);
+      font-size: 0.6875rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+      flex: none;
+    }
+    .project p { margin: 0 0 0.75rem; }
+
+    .links {
+      font-family: var(--sans);
+      font-size: 0.8125rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.375rem 0.875rem;
+      align-items: baseline;
+      color: var(--muted);
+    }
+    .links .sep { color: var(--rule); }
+    .stack {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      margin-top: 0.625rem;
+    }
+
     footer {
       max-width: 32rem;
       width: 100%;
@@ -86,9 +145,53 @@
 <body>
   <main>
     <div class="name">David You</div>
-    <h1>Coming soon.</h1>
-    <p class="lede">A personal site is on the way.</p>
-    <p>In the meantime, reach me at <a href="mailto:dyou3968@gmail.com">dyou3968@gmail.com</a>.</p>
+    <h1>Product manager, building with AI tools.</h1>
+    <p class="lede">
+      Mostly I build things to understand a problem properly — then write down what
+      the building taught me that reading could not.
+    </p>
+
+    <h2>Projects</h2>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>MyPContext</h3>
+        <span class="status">In progress</span>
+      </div>
+      <p>
+        <!-- TODO: replace with a real one-or-two-sentence description. -->
+        A product in active development.
+      </p>
+      <p class="links">
+        <a href="https://mypcontext.com">mypcontext.com</a>
+      </p>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>The Table Test</h3>
+        <span class="status">Source available</span>
+      </div>
+      <p>
+        A side-by-side probe of two native speech-to-speech models — Gemini 3.1 Flash
+        Live and OpenAI gpt-realtime — talking live through the same scenarios, the
+        same tool contract and the same audio path. Built to make the differences
+        observable rather than assumed: tool choice and argument extraction from
+        spoken alphanumerics, behaviour while a tool call is pending, and how each
+        stack handles being interrupted.
+      </p>
+      <p class="links">
+        <a href="https://github.com/dyou3968/voice-model-testing">Source on GitHub</a>
+        <!-- When the live demo is deployed, add:
+        <span class="sep">/</span>
+        <a href="https://table-test.davidyou.com">Live demo</a>
+        -->
+      </p>
+      <p class="stack">TypeScript · WebSockets · Realtime audio</p>
+    </article>
+
+    <h2>Contact</h2>
+    <p>Reach me at <a href="mailto:dyou3968@gmail.com">dyou3968@gmail.com</a>.</p>
   </main>
 
   <footer>
