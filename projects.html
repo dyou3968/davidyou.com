@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>David You</title>
-  <meta name="description" content="David You's home page. Product manager, building and testing with the latest tools." />
+  <title>Projects — David You</title>
+  <meta name="description" content="Projects by David You." />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -12,14 +12,47 @@
     <div class="name">David You</div>
 
     <nav class="tabs" aria-label="Sections">
-      <a href="./" aria-current="page">Home</a>
-      <a href="./projects.html">Projects</a>
+      <a href="./">Home</a>
+      <a href="./projects.html" aria-current="page">Projects</a>
     </nav>
 
-    <h1>David You&rsquo;s home page.</h1>
-    <p class="lede">
-      Currently a product manager, always building and testing with the latest tools.
-    </p>
+    <h1>Projects</h1>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>MyPContext</h3>
+        <span class="status">In progress</span>
+      </div>
+      <p>
+        <!-- TODO: replace with a real one-or-two-sentence description. -->
+        A product in active development.
+      </p>
+      <p class="links">
+        <a href="https://mypcontext.com">mypcontext.com</a>
+      </p>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>The Table Test</h3>
+        <span class="status">Source available</span>
+      </div>
+      <p>
+        A side-by-side probe of two native speech-to-speech models &mdash; Gemini 3.1
+        Flash Live and OpenAI gpt-realtime &mdash; talking live through the same
+        scenarios, the same tool contract and the same audio path. Built to make the
+        differences observable rather than assumed: tool choice and argument
+        extraction from spoken alphanumerics, behaviour while a tool call is pending,
+        and how each stack handles being interrupted.
+      </p>
+      <p class="links">
+        <a href="https://github.com/dyou3968/voice-model-testing">Source on GitHub</a>
+        <!-- When the live demo is deployed, add:
+        <a href="https://table-test.davidyou.com">Live demo</a>
+        -->
+      </p>
+      <p class="stack">TypeScript &middot; WebSockets &middot; Realtime audio</p>
+    </article>
   </main>
 
   <footer>
