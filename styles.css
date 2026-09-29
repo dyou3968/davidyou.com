@@ -104,6 +104,30 @@ nav.tabs a[aria-current="page"] {
   border-bottom-color: var(--accent);
 }
 
+/* ---- portrait ---- */
+/* Sits above the heading on narrow screens and moves into the left margin,
+   level with the heading, once there is room beside the text column. */
+.intro { position: relative; }
+.portrait {
+  display: block;
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 60rem) {
+  .portrait {
+    position: absolute;
+    top: 0.25rem;
+    right: calc(100% + 2.5rem);
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+}
+
 h1 {
   font-size: 1.875rem;
   line-height: 1.25;
